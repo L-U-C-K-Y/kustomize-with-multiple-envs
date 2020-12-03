@@ -1,0 +1,20 @@
+bases:
+  - ../../base
+namePrefix: pre-prod-
+
+# patches
+# Each entry in this list should resolve to
+# a partial or complete resource definition file.
+#
+# The names in these (possibly partial) resource files
+# must match names already loaded via the `resources`
+# field or via `resources` loaded transitively via the
+# `bases` entries.  These entries are used to _patch_
+# (modify) the known resources.
+#
+# Small patches that do one thing are best, e.g. modify
+# a memory request/limit, change an env var in a
+# ConfigMap, etc.  Small patches are easy to review and
+# easy to mix together in overlays.
+patchesStrategicMerge:
+  - patch-shared-env.yaml
