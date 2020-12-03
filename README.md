@@ -1,4 +1,4 @@
-# kustomize-with-multiple-envs
+# Kustomize with multiple environment variables
 
 Kustomize example with multiple environment variables.
 
@@ -20,7 +20,7 @@ kustomize build ./overlays/dev
 kustomize build ./overlays/dev | kubectl apply -f -
 ```
 
-## 2. overlay/pre-prod
+## 2. overlays/pre-prod
 
 Second example shows how to combine/patch the shared env variables, by adding custom environment variables from the overlay folder as a config-map.
 
