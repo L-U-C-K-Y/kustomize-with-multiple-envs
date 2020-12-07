@@ -22,7 +22,7 @@ patchesStrategicMerge:
   - patch-env-from.yaml
   
 # configMapGenerator
-# generate a ConfigMap named jobdone-chat-service-env-<some-hash> where each key/value pair in the
+# generate a ConfigMap named envs-<some-hash> where each key/value pair in the
 # env file appears as a data entry (separated by \n).
 configMapGenerator:
   - envs:
